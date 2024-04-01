@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Fisiologia</title>
+
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- progress barstle -->
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- font wesome stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <link href="css/index.css" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+
+
+</head>
+
+<body>
+  <div class="top_container">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.jpeg" alt="">
+            <span>
+              Fisiologia
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html#cascata" class="btn-get-started scrollto"> Cascata de Coagulação </a>
+                </li>
+
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html#somos" class="btn-get-started scrollto"> Quem Somos Nós </a>
+                </li>
+
+              </ul>
+            </div>
+        </nav>
+      </div>
+    </header>
+    <section class="hero_section ">
+      <div class="hero-container container">
+        <div class="hero_detail-box">
+          <h3>
+            Cascata de <br>
+            Coagulação          </h3>
+          <h1>
+            Como funciona?
+          </h1>
+          <p>
+            Disciplina: Fisiologia | Professora: Joyce Ramos. </br>
+            Estudantes: Amanda Seixas, Cristopher Lima, </br> Mariane Megliato e João Oliveira.
+          </p>
+          <div class="hero_btn-continer">
+            <a href="" class="call_to-btn btn_white-border">
+              <span>
+                Descubra
+              </span>
+              <img src="images/right-arrow.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="hero_img-container">
+          <div>
+            <img src="images/hero.png" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- end header section -->
+</br>
+  <!-- Cascata section -->
+  <section id="cascata" class="about_section layout_padding">
+    <div class="container">
+      <h2 class="main-heading ">
+        Cascata de Coagulação
+      </h2>
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-5 justify-content-center">
+          
+          <div class="container-geral">
+            <div class="lado-esquerdo">
+              <!-- Texto na div esquerda --> 
+              <p id="textoEsquerdoImagem"></p>
+            </div>
+            
+            <div class="container-imagem" id="container">
+              <div class="imagem-container">
+            <!-- aqui ficam as imagems, cada uma precisa estar c esses mesmos nomes, seguindo a sequencia de id
+                 se uma for ocupar todo o espaço, deve ter a classe imagem, se for ficar sobreposta a outra deve ter uma classe
+               com o memso nome do id e tambem com imagem-sobreposta, e então editar no cc o posicionamento/taanho da imagem sobreposta
+               atraves da imagem com mesma classe que o id-->
+                <img src="images/imagem1.jpg" id="imagem1" class="imagem" onclick="trocarImagem(2)" style="cursor: pointer;">
+                <img src="images/imagem2.png" id="imagem2" class="imagem-sobreposta imagem2 zoom" style="display: none;" onclick="trocarConteiner(3)" style="cursor: pointer;">
+                <img src="images/imagem3.png" id="imagem3" class="imagem imagem3" style="display: none;" onclick="trocarConteiner(4)" style="cursor: pointer;">
+                <img src="images/imagem4.png" id="imagem4" class="imagem" style="display: none;" onclick="trocarConteiner(5)" style="cursor: pointer;">
+                <img src="images/imagem5.png" id="imagem5" class="imagem" style="display: none;" onclick="trocarConteiner(6)" style="cursor: pointer;">
+                <img src="images/imagem6.gif" id="imagem6" class="imagem" style="display: none;" onclick="trocarConteiner(7)" style="cursor: pointer;">
+                <img src="images/imagem7.jpeg" id="imagem7" class="imagem" style="display: none;" onclick="trocarConteiner(8)" style="cursor: pointer;">              
+                <img src="images/imagem8.webp" id="imagem8" class="imagem" style="display: none;" onclick="trocarConteiner(9)" style="cursor: pointer;">
+                <img src="images/imagem9.png" id="imagem9" class="imagem" style="display: none;" onclick="reiniciarCiclo()" style="cursor: pointer;">
+              </div>
+            </div>
+            <div class="lado-direito">
+              <!-- Texto na div direita -->
+            <p id="textoDireitoImagem"></p>
+            </div>
+
+          </div>
+
+      <div class="d-flex justify-content-center mt-3">
+        <a href="#" class="call_to-btn  ">
+
+          <span>
+            Clique na Imagem!
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- End section cascata -->
+
+  <!-- teacher section -->
+  <section id="somos" class="teacher_section layout_padding-bottom">
+    <div class="container">
+      <h2 class="main-heading ">
+        Sobre Nós
+      </h2>
+      <p class="text-center">
+        Medicina Veterinária
+      </p>
+      <div class="teacher_container layout_padding2">
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="images/mariane.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Mariane Megliato</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="images/cris.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Cristopher Lima</h5>
+            </div>
+
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="images/amanda.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Amanda Seixas</h5>
+
+            </div>
+
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="images/joaorian.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">João Oliveira</h5>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- teacher section -->
+
+  <section id="ref" class="ref">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2 class="main-heading ">
+          Referências
+        </h2>
+        <p class="text-center">
+          Sites, Artigos e Pesquisas utilizadas como fonte.
+        </p>
+      </div>
+
+      <div class="row gy-5">
+
+        <div class="col-xl-6 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+          <div class="team-member">
+            <div class="member-info">
+              <h4>GUYTON, A. C.; HALL, J. E. Tratado de Fisiologia Médica. 13ª ed. Rio de Janeiro: Elsevier Ed., 2017.
+              </h4>
+            </div>
+          </div>
+        </div><!-- End Ref -->
+        <div class="col-xl-6 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+          <div class="team-member">
+            <div class="member-info">
+              <h4>HOFFBRAND, V. A., MOSS, H. A. P. Fundamentos em hematologia. 6 ed. Porto Alegre: Artmed, 2013.
+
+              </h4>
+            </div>
+          </div>
+        </div><!-- End Ref -->
+        <div class="col-xl-6 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+          <div class="team-member">
+            <div class="member-info">
+              <h4>http://revista.fmrp.usp.br/2001/vol34n3e4/</br>fisiologia_coagulacao.pdf
+
+              </h4>
+            </div>
+          </div>
+        </div><!-- End Ref -->
+        <div class="col-xl-6 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+          <div class="team-member">
+            <div class="member-info">
+              <h4>https://www.scielo.br/scielo.php?script=sci_arttext&pid=S15164842010000500016
+
+              </h4>
+            </div>
+          </div>
+        </div><!-- End Ref -->
+        <div class="col-xl-6 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+          <div class="team-member">
+            <div class="member-info">
+              <h4>LORENZI, T. F. Manual de Hematologia Propedêutica e Clínica. 4ª ed. Rio de Janeiro: Guanabara Koogan, 2006.
+
+              </h4>
+            </div>
+          </div>
+        </div><!-- End Ref -->
+      </br>
+      </div>
+    </div>
+  </section><!-- End Ref Section -->
+
+  </br>
+ </br>
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      Copyright &copy; 2019 All Rights Reserved
+      <a href="https://html.design/"></a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script src="js/script.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
